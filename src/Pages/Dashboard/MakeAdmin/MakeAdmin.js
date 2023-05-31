@@ -16,7 +16,7 @@ const MakeAdmin = () => {
   const handleOnSubmit = (e) => {
     const user = { email };
     // send to the server
-    fetch("https://damp-retreat-54867.herokuapp.com/users/admin", {
+    fetch("https://dream-car-server.onrender.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

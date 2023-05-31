@@ -5,7 +5,7 @@ const useProducts = () => {
   // products to be rendered on the UI
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("https://damp-retreat-54867.herokuapp.com/products")
+    fetch("https://dream-car-server.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);

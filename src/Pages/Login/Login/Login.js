@@ -100,7 +100,7 @@ const Login = () => {
   };
   const saveUser = (email, displayName, photoURL, method) => {
     const user = { email, displayName, photoURL };
-    fetch("https://damp-retreat-54867.herokuapp.com/users", {
+    fetch("https://dream-car-server.onrender.com/users", {
       method: method,
       headers: {
         "content-type": "application/json",

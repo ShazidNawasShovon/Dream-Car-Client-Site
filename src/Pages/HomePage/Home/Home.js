@@ -1,10 +1,11 @@
 import { Container, Image, Row, Spinner } from "react-bootstrap";
 import useAuth from "../../../Hooks/useAuth";
-import useProducts from "../../../Hooks/useProducts";
+
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
 import ShowProducts from "../../Shared/ShowProducts/ShowProducts";
 import Review from "../Review/Review";
+import useProducts from "../../../Hooks/useProducts";
 
 // import ShowData from "../ShowData/ShowData";
 

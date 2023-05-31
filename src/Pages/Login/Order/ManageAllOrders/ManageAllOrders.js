@@ -7,7 +7,7 @@ const ManageAllOrders = () => {
   const [isStatus] = useState(true);
   const showBtn = true;
   useEffect(() => {
-    fetch("https://damp-retreat-54867.herokuapp.com/orders/manageAllOrders")
+    fetch("https://dream-car-server.onrender.com/orders/manageAllOrders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, []);
@@ -15,7 +15,7 @@ const ManageAllOrders = () => {
   const handleDeleteUser = (_id) => {
     const proceed = window.confirm("Are you sure You want to delete ? ");
     if (proceed) {
-      const url = `https://damp-retreat-54867.herokuapp.com/order/delete/${_id}`;
+      const url = `https://dream-car-server.onrender.com/order/delete/${_id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -31,7 +31,7 @@ const ManageAllOrders = () => {
     }
   };
   const handleStatus = (_id) => {
-    const url = `https://damp-retreat-54867.herokuapp.com/status/${_id}`;
+    const url = `https://dream-car-server.onrender.com/status/${_id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -53,7 +53,7 @@ const ManageAllOrders = () => {
   return (
     <Container>
       <h2 className="text-center fw-bold mt-4 fs-1 text-dark">
-        All Travelers
+        All Clients
         <span className="text-warning"> Booking</span>{" "}
       </h2>
 

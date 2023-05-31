@@ -6,7 +6,7 @@ const ManageAllProducts = () => {
   const [allProducts, setAllProducts] = useState([]);
   const dltBtn = true;
   useEffect(() => {
-    fetch("https://damp-retreat-54867.herokuapp.com/products")
+    fetch("https://dream-car-server.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, []);
@@ -16,7 +16,7 @@ const ManageAllProducts = () => {
       "Are you sure You want to delete This Product ? "
     );
     if (proceed) {
-      const url = `https://damp-retreat-54867.herokuapp.com/product/delete/${_id}`;
+      const url = `https://dream-car-server.onrender.com/product/delete/${_id}`;
       fetch(url, {
         method: "DELETE",
       })

@@ -83,7 +83,7 @@ const useFirebase = () => {
       });
   };
   useEffect(() => {
-    fetch(`https://damp-retreat-54867.herokuapp.com/users/${user.email}`)
+    fetch(`https://dream-car-server.onrender.com/users/${user.email}`)
       .then((res) => res.json())
       .then((data) => setAdmin(data.admin));
   }, [user.email]);

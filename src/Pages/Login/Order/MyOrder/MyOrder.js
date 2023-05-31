@@ -10,7 +10,7 @@ const MyOrder = () => {
   const showBtn = false;
 
   useEffect(() => {
-    fetch("https://damp-retreat-54867.herokuapp.com/orders/manageAllOrders")
+    fetch("https://dream-car-server.onrender.com/orders/manageAllOrders")
       .then((res) => res.json())
       .then((data) => setMyOrders(data));
   }, []);
@@ -20,7 +20,7 @@ const MyOrder = () => {
   const handleDeleteUser = (_id) => {
     const proceed = window.confirm("Are you sure You want to delete ? ");
     if (proceed) {
-      const url = `https://damp-retreat-54867.herokuapp.com/order/delete/${_id}`;
+      const url = `https://dream-car-server.onrender.com/order/delete/${_id}`;
       fetch(url, {
         method: "DELETE",
       })

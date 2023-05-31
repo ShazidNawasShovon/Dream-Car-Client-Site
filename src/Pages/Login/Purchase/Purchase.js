@@ -25,7 +25,7 @@ const Purchase = () => {
   const onSubmit = (data) => {
     // const savedCart = ;
     data.cart = productToShow;
-    fetch("https://damp-retreat-54867.herokuapp.com/orders", {
+    fetch("https://dream-car-server.onrender.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

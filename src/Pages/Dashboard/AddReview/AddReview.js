@@ -15,12 +15,11 @@ const AddReview = () => {
   const { user } = useAuth();
   // Taken From React Hook Form On Submit
   const onSubmit = (data) => {
-    axios
-      .post("https://damp-retreat-54867.herokuapp.com/review", data)
-      .then((res) => {
-        alert("Review Added successfully");
-        reset();
-      });
+    axios.post("https://dream-car-server.onrender.com/review", data)
+    .then((res) => {
+      alert("Review Added successfully");
+      reset();
+    });
   };
   return (
     <div className="add-Review my-0 py-5 container-fluid">
